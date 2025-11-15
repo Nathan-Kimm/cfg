@@ -8,6 +8,13 @@ const LoginPage = () => {
   const handleGoogleLogin = () => {
     // TODO: Implement Google OAuth login
     console.log('Google login clicked');
+    navigate('/dashboard');
+  };
+
+  const handleLogin = (e) => {
+    e.preventDefault();
+    // Redirect to dashboard without validation
+    navigate('/dashboard');
   };
 
   return (
@@ -65,7 +72,7 @@ const LoginPage = () => {
             </div>
           </div>
 
-          <form className="space-y-4">
+          <form onSubmit={handleLogin} className="space-y-4">
             <div>
               <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
                 Email address

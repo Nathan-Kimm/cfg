@@ -23,7 +23,7 @@
 
 **Tech Stack:**
 - Python 3.9+
-- [Add other technologies, frameworks, APIs used]
+- [Add other technologies, frameworks, APIs used]   
 - [Cloud services, databases, etc.]
 
 **Architecture:**
